@@ -43,9 +43,9 @@
           password: $('#inputPassword').val()
         }),
         success: function(data){
-            //console.log(data);
-            //if(data.message == "Enjoy your token!")
-              //window.location.href = 'http://localhost:3000/api/dashboard';
+            console.log(data);
+            if(data.message == "Enjoy your token!")
+              window.location.href = 'http://localhost:3000/api/dashboard';
         },
         error: function(xhr, textStatus, error) {
           console.log(xhr.statusText);
