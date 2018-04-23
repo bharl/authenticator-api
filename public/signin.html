@@ -43,8 +43,7 @@
           password: $('#inputPassword').val()
         }),
         success: function(data){
-            localStorage.setItem('currentUser', JSON.stringify({token: data.token}));
-            //console.log(data);
+            console.log(data);
         },
         error: function(xhr, textStatus, error) {
           console.log(xhr.statusText);
@@ -52,7 +51,6 @@
           console.log(error);
         }
       });
-      //alert($('#inputPassword').val());
     });
   </script>
 
